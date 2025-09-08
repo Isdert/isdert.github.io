@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Isdert Falero">
+
+
+
+    <meta name="description" content="A Blog Build By Isdert">
+
+
+
+
+
+<title>初遇Astro DX以及使用教程 | Isdert&#39;s Blog</title>
+
+
+
+    <link rel="icon" href="/icon3.ico">
+
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto+Mono&display=swap');
+</style>
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/menu.js"></script>
+    
+
+
+
+
+
+
+
+
+
+
+  <meta name="generator" content="Hexo 7.3.0"></head>
+  <body>
+    <div class="mask-border">
+    </div>
+
+    <div class="wrapper">
+
+      <div class="header">
+  <div class="flex-container">
+    <div class="header-inner">
+      <div class="site-brand-container">
+        <a href="/">
+          
+            <img class="logo-img" src="/logo1.png" alt="logo_image">
+          
+        </a>
+      </div>
+      <div id="menu-btn" class="menu-btn" onclick="toggleMenu()">
+        Menu
+      </div>
+      <nav class="site-nav">
+        <ul class="menu-list">
+          
+            
+              <li class="menu-item">
+                <a href="/">Home</a>
+              </li> 
+                   
+          
+            
+              <li class="menu-item">
+                <a href="/archives/">Archive</a>
+              </li> 
+                   
+          
+            
+              <li class="menu-item">
+                <a href="/gallery/">Gallery</a>
+              </li> 
+                   
+          
+          
+            <li class="menu-item search-btn">
+              <a href="#">Search</a>
+            </li>
+          
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+<script src="/js/menu.js"></script>
+
+
+      <div class="main">
+        <div class="flex-container">
+          <article id="post">
+
+  
+    <div class="post-head">
+    <div class="post-info">
+        <div class="tag-list">
+            
+        </div>
+        <div class="post-title">
+            
+            
+                初遇Astro DX以及使用教程
+            
+            
+        </div>
+        <span class="post-date">
+            Sep 7, 2025
+        </span>
+    </div>
+    <div class="post-img">
+        
+            <div class="h-line-primary"></div>
+              
+    </div>
+</div>
+    <div class="post-content">
+    <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>鸽游在八月三十一号六周年纪念日宣布与mai mai联动，总共4首曲子，komplexe 真的开口跪，豪听😭。</p>
+<p>此外还有アンビバレンス以及两首重量级曲solips和QZKago Requiem，作为小鸽子真得超开心😋，而且同时萌生出玩舞萌的想法。</p>
+<p>其实早就想玩乌蒙了，long long ago在机厅看见了舞萌的机子，不过当时有一个小孩哥在打，看起来很厉害，加上社恐，于是成功被劝退了😰</p>
+<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><h2 id="准备："><a href="#准备：" class="headerlink" title="准备："></a>准备：</h2><p>近日在b站刷到有人用平板打maimai,在一番搜索下找到了叫<a target="_blank" rel="noopener" href="https://github.com/2394425147/astrodx/releases"><strong>Astro DX</strong></a>的应用，github开源，完美还原了maimai的玩法，门槛低，对我来说非常友好，不用担心社恐😋</p>
+<p>点击上述链接下载最新版即可，不过建议用<a target="_blank" rel="noopener" href="https://proxy.pipers.cn/"><strong>Github加速下载</strong></a>，这是一个公益网站，比直接下载快很多。</p>
+<p>下载安装之后打开会发现没有任何曲目，此时需要在网上下载谱面文件。</p>
+<p>推荐<a target="_blank" rel="noopener" href="https://astrodx.milkbot.cn/">Milkbot</a>,可以下载自己喜欢的曲目，我把与phigros联动的曲目全下了😋</p>
+<p>下载完之后曲目需要导入，且导入目录为&#x2F;Android&#x2F;data&#x2F;com.Reflektone.AstroDX&#x2F; (没有这个目录说明你安装完之后没有打开过应用)。</p>
+<p>众所周知，Android 13及以上&#x2F;Android&#x2F;data&#x2F;目录被锁了，普通用户没有写入权限，所以无法导入谱面😰</p>
+<ul>
+<li><h2 id="这里有两种方案"><a href="#这里有两种方案" class="headerlink" title="这里有两种方案"></a>这里有两种方案</h2></li>
+</ul>
+<ol>
+<li><h3 id="直接root（想必不用说了🐵）"><a href="#直接root（想必不用说了🐵）" class="headerlink" title="直接root（想必不用说了🐵）"></a>直接root（想必不用说了🐵）</h3></li>
+<li><h3 id="使用shiziku-MT管理器"><a href="#使用shiziku-MT管理器" class="headerlink" title="使用shiziku + MT管理器"></a>使用shiziku + MT管理器</h3><p>说一下第二种</p>
+<p>首先下载<a target="_blank" rel="noopener" href="https://shizuku.rikka.app/zh-hans/"><strong>Shiziku</strong></a>以及<a target="_blank" rel="noopener" href="https://mt2.cn/"><strong>MT管理器</strong></a></p>
+<p>然后打开shiziku,#### 选择通过无线调试启动（Android版本大于等于11），按照提示配对，配对完之后直接启动。</p>
+<p>再打开MT管理器，此时应该会自动弹出通过shiziku授权窗口，到这里data目录应该可以正常访问了</p>
+</li>
+</ol>
+<h2 id="导入谱面："><a href="#导入谱面：" class="headerlink" title="导入谱面："></a>导入谱面：</h2><p>在<a target="_blank" rel="noopener" href="https://astrodx.milkbot.cn/">Milkbot</a>上下载谱面后，会得到zip文件。这时用MT管理器将zip文件解压到&#x2F;Android&#x2F;data&#x2F;com.Reflektone.AstroDX&#x2F;</p>
+<p>解压后就得到了谱面文件夹，这时候重新压缩文件夹，[可以在压缩前改一下文件夹名称（默认是纯数字），方便区分谱面],此时将要压缩成的文件<strong>后缀.zip改成.adx</strong></p>
+<p>清除游戏后台之后进入游戏就能看到谱面了😍</p>
+
+</div> 
+
+<script>
+    window.onload = detectors();
+</script>
+    <div class="post-footer">
+    <div class="h-line-primary"></div>
+    <nav class="post-nav">
+        <div class="prev-item">
+           
+        </div>
+        <div class="next-item">
+            
+                <div class="icon arrow-right"></div>
+                <div class="post-link">
+                  <a href="/2025/08/31/chromebook/">Next</a>  
+                </div>  
+            
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="post-comment">
+
+     
+
+     
+    
+    
+
+</div>
+     
+  
+</article>
+        </div>
+      </div>
+      
+      <div class="footer">
+    <div class="flex-container">
+        <div class="footer-text">
+            
+            
+                © 2025 Isdert | 
+            
+            
+                Powered by <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> & <a target="_blank" rel="noopener" href="https://github.com/zoeingwingkei/frame/">Frame</a>
+                
+        </div>
+    </div>
+</div>
+
+    </div>
+
+    
+      <div class="search-popup">
+    <div class="search-popup-overlay">  
+    </div>
+    <div class="search-popup-window" >
+        <div class="search-header">
+            <div class="search-input-container">
+              <input autocomplete="off" autocapitalize="off" maxlength="80"
+                     placeholder="Search Anything" spellcheck="false"
+                     type="search" class="search-input">
+            </div>
+            <div class="search-close-btn">
+                <div class="icon close-btn"></div>
+            </div>
+        </div>
+        <div class="search-result-container">
+        </div>
+    </div>
+</div>
+
+<script>
+    const searchConfig = {
+        path             : "/search.xml",
+        top_n_per_article: "1",
+        unescape         : "false",
+        trigger: "auto",
+        preload: "false"
+    }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.0/dist/search.js"></script>
+<script src="/js/search.js"></script>
+    
+    
+
+  </body>
+</html>
