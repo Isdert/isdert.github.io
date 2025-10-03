@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+# Sitemap declarations
+Sitemap: https://isdert.me/sitemap.xml
+Sitemap: https://isdert.me/sitemap.txt

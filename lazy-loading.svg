@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <!-- 内部圆形代码不变 -->
+  <circle cx="10" cy="10" r="4" fill="#666">
+    <animate attributeName="r" from="4" to="8" dur="2s" repeatCount="indefinite" begin="0s" easing="ease-out" fill="freeze"/>
+    <animate attributeName="opacity" from="1" to="0" dur="2s" repeatCount="indefinite" begin="0s" easing="ease-out" fill="freeze"/>
+  </circle>
+  <circle cx="10" cy="10" r="4" fill="#666">
+    <animate attributeName="r" from="4" to="8" dur="2s" repeatCount="indefinite" begin="1s" easing="ease-out" fill="freeze"/>
+    <animate attributeName="opacity" from="1" to="0" dur="2s" repeatCount="indefinite" begin="1s" easing="ease-out" fill="freeze"/>
+  </circle>
+</svg>
