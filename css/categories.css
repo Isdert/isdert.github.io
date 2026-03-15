@@ -1,0 +1,111 @@
+.category-list {
+  margin: 30px 0;
+}
+.category-list .cat-item {
+  display: inline-block;
+  margin: 0 12px 12px 0;
+  padding: 10px 20px;
+  background: #eef;
+  color: #333;
+  text-decoration: none;
+  border-radius: 20px;
+}
+.category-list .cat-item:hover {
+  background: #4285f4;
+  color: #fff;
+}
+.article-list {
+  margin-top: 25px;
+}
+.article-list .article-card {
+  padding: 15px 0;
+  border-bottom: 1px dashed #eee;
+}
+.article-list .article-card:last-child {
+  border: none;
+}
+.article-list .article-card h2 {
+  margin: 0;
+}
+.article-list .article-card h2 a {
+  color: #222;
+  text-decoration: none;
+}
+.article-list .article-card h2 a:hover {
+  color: #4285f4;
+}
+.article-list .empty-tip {
+  color: #999;
+  padding: 20px 0;
+}
+.back-btn {
+  display: inline-block;
+  margin: 10px 0 20px;
+  color: #4285f4;
+  text-decoration: none;
+}
+.back-btn:hover {
+  text-decoration: underline;
+}
+.category-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 20px 0;
+}
+.category-tag {
+  display: inline-block;
+  padding: 6px 12px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  text-decoration: none;
+  color: #333;
+  transition: all 0.3s ease;
+}
+.category-tag:hover {
+  background: #2c3e50;
+  color: #fff;
+  border-color: #2c3e50;
+}
+.category-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 20px 0;
+}
+.category-tag {
+  display: inline-block;
+  padding: 6px 12px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  text-decoration: none;
+  color: #333;
+  transition: all 0.3s ease;
+}
+.category-tag:hover {
+  background: #2c3e50;
+  color: #fff;
+  border-color: #2c3e50;
+}
+.back-btn {
+  display: block !important; /* 独占一行方便控距 */
+  margin-top: 16px !important; /* 与上方间距 */
+  margin-bottom: 20px !important; /* 与下方分类标签间距 */
+  text-decoration: none !important;
+  color: #333 !important;
+}
+.icon.arrow-left {
+  width: 22.5px !important;
+  height: 22.5px !important;
+  float: left !important; /* 图标左浮 */
+  margin-right: 8px !important; /* 图标与文字间距 */
+  -webkit-mask-image: url("../../icon/arrow-left.svg") !important;
+  mask-image: url("../../icon/arrow-left.svg") !important;
+  background-color: #333 !important;
+}
+.back-text {
+  font-size: 14px !important;
+  line-height: 22.5px !important; /* 文字高度与图标对齐 */
+  display: block !important;
+  overflow: hidden !important; /* 避免文字绕到图标下方 */
+}

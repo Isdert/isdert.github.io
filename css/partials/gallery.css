@@ -1,0 +1,46 @@
+/* partials/gallery.styl */
+.gallery-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 30px;
+}
+.gallery-item {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 15px;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+.gallery-item:hover {
+  background-color: var(--light-bg) /* 或主题自有变量，如 $light-bg */;
+}
+.gallery-img-wrapper {
+  width: 200px;
+  flex-shrink: 0;
+  margin-right: 20px;
+}
+.gallery-img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 4px;
+  box-shadow: var(--shadow-sm) /* 或主题自有变量，如 $shadow-sm */;
+}
+.gallery-info {
+  flex-grow: 1;
+}
+.gallery-title {
+  font-size: var(--font-size-lg) /* 或 $font-size-lg */;
+  color: var(--text-color) /* 或 $text-color */;
+  margin: 0 0 8px 0;
+  transition: color 0.3s;
+}
+.gallery-item:hover .gallery-title {
+  color: var(--primary-color) /* 或 $primary-color */;
+}
+.gallery-date {
+  font-size: var(--font-size-sm) /* 或 $font-size-sm */;
+  color: var(--text-light) /* 或 $text-light */;
+}
